@@ -1,0 +1,40 @@
+.header {
+    border-bottom: 1px solid rgb(236, 236, 236);
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &__logo {
+        color: $logo-header-dark;
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+
+    &__contact {
+        color: $second-color;
+        text-decoration: none;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        fill: $second-color;
+
+        &--mail {
+            margin-right: 40px;
+        }
+
+        &:is(:hover, :focus) {
+            color: $active-color;
+            fill: $active-color;
+            transition-property: color, fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+}

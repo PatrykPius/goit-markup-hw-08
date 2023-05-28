@@ -1,0 +1,30 @@
+.footer {
+    background-color: $first-background-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__flex {
+        display: flex;
+    }
+
+    &__address {
+        margin-right: 70px;
+    }
+
+    &__logo {
+        color: $logo-footer;
+    }
+
+    &__contact {
+        text-decoration: none;
+        line-height: 1.71;
+
+        &:hover,
+        &:focus {
+            color: $active-color;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+}

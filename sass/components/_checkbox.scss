@@ -1,0 +1,23 @@
+.checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &__input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        appearance: none;
+
+        &:checked + svg {
+            background: $modal-checkbox;
+            border: none;
+        }
+    }
+
+    &__regulations {
+        fill: white;
+        border-radius: 2px;
+        border: 1px solid black;
+    }
+}

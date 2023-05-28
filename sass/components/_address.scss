@@ -1,0 +1,10 @@
+.address {
+    color: $address;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    margin-top: 20px;
+
+    &__contact {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}

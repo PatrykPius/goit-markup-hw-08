@@ -1,0 +1,132 @@
+.modal {
+    transition: transform 0.6s linear;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(0);
+    width: 528px;
+    height: 581px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    &__close {
+        text-align: right;
+
+        &--x {
+            box-sizing: border-box;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-top: 8px;
+            margin-right: 8px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            padding: 6px;
+
+            &:hover {
+                fill: $x-modal-color;
+                border-color: $x-modal-background;
+                transition-property: fill, border-color;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            }
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        line-height: 23px;
+        letter-spacing: 0.03em;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        margin: 12px 40px 20px 40px;
+        font-size: 12px;
+        position: relative;
+    }
+
+    &__label {
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 15px;
+        margin-top: 4px;
+        margin-bottom: 10px;
+
+        &:is(:hover, :focus, :focus-within) {
+            fill: $modal-input-icon;
+            border: none;
+            border: 1px solid $modal-input-border;
+            border-radius: 4px;
+            transition-property: fill, border ;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    &__input {
+        border: none;
+        width: 100%;
+        margin-left: 12px;
+        outline: none;
+
+        &:active {
+            border: none;
+        }
+    }
+
+    &__textarea {
+        width: 448px;
+        height: 120px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        margin-top: 4px;
+        padding: 12px 16px;
+        resize: none;
+        outline: none;
+
+        &:is(:focus-within) {
+            border: 1px solid $active-color;
+            transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    &__regulations {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: $modal-regulamin;
+    }
+
+    &__button {
+        width: 200px;
+        height: 50px;
+        background: $modal-buton-background;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.06em;
+        color: $modal-buton-text;
+        border: none;
+
+        &--position {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

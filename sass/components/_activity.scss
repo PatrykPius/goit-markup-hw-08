@@ -1,0 +1,46 @@
+.activity {
+    margin-top: -94px;
+
+    &__div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__img {
+        position: relative;
+        display: inline-flex;
+    }
+
+    &__text {
+        position: absolute;
+        color: $img-title;
+        background: rgba(47, 48, 58, 0.8);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        width: 370px;
+        height: 70px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        line-height: 1.14;
+        padding-top: 27px;
+        padding-bottom: 27px;
+    }
+}

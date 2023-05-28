@@ -1,0 +1,29 @@
+.icons {
+
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__border {
+        display: flex;
+        justify-content: center;
+        background-color: $svg-second-background-color;
+        border-radius: 4px;
+        padding: 25px 100px;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        color: $second-color;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+}
